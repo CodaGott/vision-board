@@ -1,10 +1,14 @@
 package com.visionboard.data.model;
 
+import lombok.Data;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+@Document
+@Data
 public class Vision {
     private String visionId;
     private String title;
@@ -20,4 +24,6 @@ public class Vision {
             categories.addAll(Arrays.asList(category));
         }
     }
+
+
 }
