@@ -1,4 +1,4 @@
-package com.visionboard.security;
+package com.visionboard.security.jwt;
 
 
 import lombok.extern.slf4j.Slf4j;

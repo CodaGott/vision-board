@@ -1,4 +1,4 @@
-package com.visionboard.security;
+package com.visionboard.security.jwt.filters;
 
 import com.visionboard.security.jwt.JwtProvider;
 import com.visionboard.web.service.UserDetailsServiceImpl;

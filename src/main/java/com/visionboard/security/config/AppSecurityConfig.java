@@ -1,7 +1,7 @@
 package com.visionboard.security.config;
 
-import com.visionboard.security.JwtAuthenticationEntryPoint;
-import com.visionboard.security.JwtAuthenticationFilter;
+import com.visionboard.security.jwt.JwtAuthenticationEntryPoint;
+import com.visionboard.security.jwt.JwtAuthenticationFilter;
 import com.visionboard.web.service.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
