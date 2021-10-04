@@ -25,5 +25,12 @@ public class Vision {
         }
     }
 
+    public void removeFromCategoty(Category category){
+        if (categories == null){
+            this.categories = new ArrayList<>();
+            categories.remove(category);
+        }
+    }
+
 
 }
