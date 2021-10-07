@@ -16,9 +16,14 @@ public class User {
     private String age;
     private String email;
     private String password;
-    private List<Role> roles;
+    private Role roles;
     @DBRef
     private List<Vision> visions;
+    private Boolean active;
+
+    public void activate(){
+        this.active = true;
+    }
 
     public void addVision(Vision... vision){
         if (visions == null){

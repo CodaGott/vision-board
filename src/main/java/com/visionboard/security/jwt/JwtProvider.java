@@ -84,6 +84,13 @@ public class JwtProvider {
         }
     }
 
+    public String getUserNameFromJwtToken(String token){
+        return Jwts.parser()
+                .setSigningKey("HelloWorld")
+                .parseClaimsJws(token)
+                .getBody().getSubject();
+    }
+
     public long getExpiryDuration(){
         return 3600000;
     }
